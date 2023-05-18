@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제2</title>
+</head>
+<body>
+    <style>
+        #container{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        #container2{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        #color>option>*{
+            color: black;
+        }
+    </style>
+    <h2>문제 1. 색상 선택후 변경 버튼을 클릭하면 색상이 변경되도록 만들어 보시오</h2>
+    <div id="container"> 
+
+    </div>
+    <select id="color">
+        <option value="black">black</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+    </select>
+    <button onclick="changeColor2();">변경</button>
+    <h2>문제 2. 버튼에 따른 크기 조절이 가능하게 만들어 보시오</h2>
+        
+    <div id="container2">
+        
+    </div>
+    <button onclick="resize();">50x50</button>
+    <button onclick="resize2();">원본(100x100)</button>
+    <button onclick="resize3();">200x200</button>
+    <script>
+        // const changeColor=()=>{
+        //     const option=document.getElementById("color");
+        //     const optVal=option.options[option.selectedIndex].value;
+        //     console.log(optVal);
+        //     const div=document.getElementById("container");
+        //     div.style.backgroundColor=`${optVal}`;
+        // }
+        const changeColor2=()=>{
+            const option=document.getElementById("color");
+            const optVal=option.options[option.selectedIndex].value;
+            const div=document.getElementById("container");
+            div.style.backgroundColor=`${optVal}`;
+        }
+        const resize=()=>{
+            
+        }
+        
+    </script>
+</body>
+</html>
